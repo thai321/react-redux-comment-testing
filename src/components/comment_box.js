@@ -17,10 +17,12 @@ class CommentBox extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    // console.log(this.props);
-    this.props.saveComment(this.state.comment);
-    this.setState({comment: ''});
 
+    if(this.state.comment.trim()) {
+      // console.log(this.props);
+      this.props.saveComment(this.state.comment);
+    }
+    this.setState({comment: ''});
   }
   clickEnter(event){
     if(event.key === 'Enter') {
