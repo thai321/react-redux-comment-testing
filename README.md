@@ -1,1 +1,1 @@
-# react-redux-testing
+# react-redux-comment-testing
